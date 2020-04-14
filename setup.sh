@@ -1,4 +1,4 @@
 #!/bin/bash
-
-ln -s ~/home_config/.zshrc ~/.zshrc
-ln -s ~/home_config/.zshrc.user ~/.zshrc.user
+ 
+ln -s $(pwd)/.zshrc ~/.zshrc
+ln -s $(pwd)/.zshrc.user ~/.zshrc.user
