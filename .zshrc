@@ -3,7 +3,6 @@
 
 # My own .zshrc
 source ./home_config/.zshrc.user
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/micso/.oh-my-zsh"
 
@@ -75,11 +74,13 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git asdf)
 
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MODE='awesome-fontconfig'
 source $ZSH/oh-my-zsh.sh
 
 # Set powerlevel9k visual properties
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 fpath=(/completions /Users/micso/.oh-my-zsh/plugins/git /Users/micso/.oh-my-zsh/functions /Users/micso/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.7.1/functions)
 
 autoload -Uz compinit && compinit
+
